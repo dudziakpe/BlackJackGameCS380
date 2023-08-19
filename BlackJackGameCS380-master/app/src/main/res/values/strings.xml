@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">BlackJackGame</string>
+    <string name="blackjack">Blackjack</string>
+    <string name="start_game">Start Game</string>
+
+    <!--         -->
+    <!-- Actions -->
+    <!--         -->
+    <string name="hit">Hit</string>
+    <string name="stand">Stand</string>
+    <string name="surrender">Surrender</string>
+    <string name="double_down">Double Down</string>
+    <string name="split">Split</string>
+    <string name="quit">Return to Main Menu</string>
+</resources>

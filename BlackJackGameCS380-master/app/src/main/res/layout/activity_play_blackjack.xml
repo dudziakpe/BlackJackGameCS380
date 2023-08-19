@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Play_Blackjack"
+        android:background="@drawable/greentable">
+
+    <TextView
+            android:id="@+id/Value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible" />
+
+
+    <Button
+        android:id="@+id/quit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:text="Return to Main Menu"
+        android:visibility="invisible" />
+
+
+    <Button
+        android:id="@+id/Stand"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="20dp"
+        android:layout_toLeftOf="@id/DoubleDwn"
+        android:text="Stand"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/Hit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@id/DoubleDwn"
+        android:text="Hit"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/Surrender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/Stand"
+        android:layout_alignLeft="@id/Stand"
+        android:text="Surrender"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/DoubleDwn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="Double Down"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/Split"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/Hit"
+        android:layout_alignRight="@id/Hit"
+        android:text="Split"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/Replay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/quit"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="Play Again"
+        android:visibility="invisible" />
+
+    <TextView
+            android:id="@+id/userTurntxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:text="user turn">
+
+    </TextView>
+
+    <RelativeLayout
+        android:id="@+id/userscr"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_below="@id/quit"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp" />
+
+    <RelativeLayout
+        android:id="@+id/dealerscr"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_above="@id/quit"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="100dp" />
+
+</RelativeLayout>
